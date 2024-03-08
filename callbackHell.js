@@ -1,17 +1,15 @@
-function fetchData(callback) {
+function wakeUp(callback) {
     setTimeout(() => {
         console.log("Thức dậy");
         callback();
     }, 1000);
 }
-
-function processData(callback) {
+function Cooking(callback) {
     setTimeout(() => {
         console.log("Nấu ăn");
         callback();
     }, 1000);
 }
-
 function eating(callback) {
     setTimeout(() => {
         console.log("Ăn sáng");
@@ -24,12 +22,11 @@ function working() {
         console.log("Đi làm");
     }, 1000);
 }
-
 // eating(() => working())
 // Callback Hell
-fetchData(() => {
-    processData(() => {
-        displayData(() => {
+wakeUp(() => {
+    Cooking(() => {
+        eating(() => {
             working();
         });
     });

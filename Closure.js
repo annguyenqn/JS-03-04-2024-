@@ -10,7 +10,7 @@ function human(n) {
         sayHi,
         howoldAreu,
     }
-    //hàm nội bộ (inner function) có thể truy cập và "ghi nhớ" ngữ cảnh (context) của hàm bên ngoài nó,
+    // hàm nội bộ (inner function) có thể truy cập và "ghi nhớ" ngữ cảnh (context) của hàm bên ngoài nó,
     // bao gồm cả biến và tham số của hàm bên ngoài.
     // cả 2 funtion đều có thể truy cập đến biến name bên ngoài
 }

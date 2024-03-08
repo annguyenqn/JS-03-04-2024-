@@ -53,6 +53,3 @@ const itemEvery = items.every((item) => { return item.price > 2000 }) //false
 const itemReduce = items.reduce((currentTotal, item) => { return item.price + currentTotal }, 0) //false
 
 
-console.log(itemReduce);
-
-

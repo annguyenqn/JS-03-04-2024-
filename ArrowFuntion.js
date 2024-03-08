@@ -39,7 +39,6 @@ function RegularFunction() {
     this.getValue = function () {
         console.log(this.value);
     };
-
     // Sử dụng setTimeout với arrow function để giữ giá trị của this
     setTimeout(() => {
         console.log("Inside RegularFunction setTimeout:", this.value); // Giá trị của this là đối tượng được tạo bởi RegularFunction
