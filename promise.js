@@ -1,16 +1,15 @@
 //Promise là 1 object
 // Promise có 3 trạng thái: pending, fulfilled, reject
-//then() recieve a funtion to be excuted khi fullfilled 
+//then() recieve a funtion to be excuted khi fullfilled
 //catch()  recieve a funtion to be excuted khi reject
-function fetchData() {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log("Dữ liệu lần 1");
-            resolve();
-        }, 1000);
-    });
-}
-
+// function fetchData() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             console.log("Dữ liệu lần 1");
+//             resolve();
+//         }, 1000);
+//     });
+// }
 function processData() {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -19,7 +18,6 @@ function processData() {
         }, 1000);
     });
 }
-
 function displayData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -33,8 +31,12 @@ function displayData() {
         }, 1000);
     });
 }
+// đợi các promise  cùng lúc để thực hiện call back khác
+Promise.all([processData(), displayData()])
+    .then(results => {
+        console.log(results);
+    })
 // Sử dụng Promise để giải quyết callback hell
-fetchData()
-    .then(() => processData())
-    .then(() => displayData())
-    .catch(error => console.error("Lỗi:", error));
+
+
+

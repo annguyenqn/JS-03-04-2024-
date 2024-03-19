@@ -23,7 +23,6 @@ function addWorldAsync(result) {
         }, 1000);
     });
 }
-
 // Sử dụng async/await để chuyển đổi từ Promise sang đồng bộ
 async function processData() {
     try {
@@ -35,6 +34,5 @@ async function processData() {
         console.error("Lỗi:", error);
     }
 }
-
 // Gọi hàm processData
 processData();

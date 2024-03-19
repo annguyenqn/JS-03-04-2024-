@@ -10,12 +10,11 @@ function exampleVar() {
     }
     console.log("Outside loop:", i);
 }
-exampleVar(); // Output: Inside loop: 0, Inside loop: 1, Inside loop: 2, Outside loop: 3
+exampleVar();
 // Sử dụng let
 function exampleLet() {
     for (let j = 0; j < 3; j++) {
         console.log("Inside loop:", j);
     }
-    // console.log("Outside loop:", j); // Sẽ gây ra lỗi ReferenceError: j is not defined
 }
-exampleLet(); // Output: Inside loop: 0, Inside loop: 1, Inside loop: 2
+exampleLet();

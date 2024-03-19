@@ -16,7 +16,6 @@ function eating(callback) {
         callback();
     }, 1000);
 }
-
 function working() {
     setTimeout(() => {
         console.log("Đi làm");

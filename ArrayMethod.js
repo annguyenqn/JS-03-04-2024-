@@ -7,8 +7,8 @@ const number = [1, 2, 3, 4, 5];
 //     console.log(`Phần tử thứ ${index}: ${value * 2}`);
 // });
 // ----------Map--------
-//map được sử dụng để tạo ra một mảng mới bằng cách thực hiện một hàm callback cho mỗi phần tử của mảng
-//map trả về một mảng mới chứa kết quả của việc thực hiện hàm callback trên từng phần tử.
+// map được sử dụng để tạo ra một mảng mới bằng cách thực hiện một hàm callback cho mỗi phần tử của mảng
+// map trả về một mảng mới chứa kết quả của việc thực hiện hàm callback trên từng phần tử.
 // Sử dụng map để tạo ra mảng mới chứa giá trị nhân đôi của mỗi phần tử
 // console.log("Sử dụng map:");
 // const doubledNumbers = numbers.map((value, index) => {
@@ -51,5 +51,5 @@ const itemEvery = items.every((item) => { return item.price > 2000 }) //false
 //reduce sử dụng để thu gọn một mảng thành một giá trị duy nhất dựa trên các phần tử trong mảng đó. 
 //Nó thường được sử dụng để tính tổng, tích, hoặc thực hiện các phép tính phức tạp hơn trên các phần tử của mảng.
 const itemReduce = items.reduce((currentTotal, item) => { return item.price + currentTotal }, 0) //false
-
+console.log(itemReduce);
 

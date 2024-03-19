@@ -1,19 +1,16 @@
 //-------------------Set------------------
-// const myArr = [1, 2, 3, 4, 5, 2, 4, 3, 3]
-// const setArr = new Set(myArr)
-
-// console.log('this is myArr:', myArr); //output : [ 1, 2, 3, 4, 5, 2, 4, 3, 3 ]
+const myArr = [1, 2, 3, 4, 5, 2, 4, 3, 3]
+const setArr = new Set(myArr)
+// console.log('this is myArr:', setArr); //output : [ 1, 2, 3, 4, 5, 2, 4, 3, 3 ]
 // set sẽ loại bỏ các trùng lặp
 // console.log('this is setArr:', setArr); //output: Set(5) { 1, 2, 3, 4, 5 }
-
 // const uniqueArr = [...setArr];
 // console.log('this is unique arr', uniqueArr); //output : [ 1, 2, 3, 4, 5 ]
-
 //Add thêm 1 phần tử vào
-// setArr.add(6);
+setArr.add(6);
 // console.log('this is setArr:', setArr);  //output: Set(6) { 1, 2, 3, 4, 5, 6 }
 //delete xóa 1 phần tử
-// setArr.delete(6);
+setArr.delete(6);
 // console.log('this is setArr:', setArr);//output: Set(5) { 1, 2, 3, 4, 5 }
 //clear  clear set:
 // setArr.clear();
@@ -31,11 +28,25 @@
 // khi ta muốn lưu trữ data không trùng lặp
 
 // -----------------------------Map-------------------------
-// const myMap = new Map([
-//     ['name', 'An'],
-//     ['age', 20],
-//     ['language', 'Js']
-// ])
+const myMap = new Map([
+    ['name', 'An'],
+    ['laguage', 20],
+    ['age', 'Js']
+])
+// console.log(myMap.keys());
+//key value  độc nhất và nếu key giống nhau thì sẽ lấy the last one.
+//
+const newarr = [...myMap]
+// console.log(newarr);
+for (const [key, value] of myMap) {
+    console.log(`${key} ${value}`);
+}
+
+
+
+
+
+
 // set: thêm 1 cặp key value
 // myMap.set('university', 'QN')
 // delete: delete 1 cặp key value

@@ -1,4 +1,4 @@
-//this dựa vào đg gọi đến nó ở đây là me  và me2 
+//this dựa vào đg gọi đến nó ở đây là me  và me2
 function talk() {
     return `my name is ${this.name}`
 }
